@@ -2,5 +2,5 @@
     display: grid;
     grid-auto-rows: minmax(auto,auto);
     grid-template-columns: repeat(5,1fr);
-    margin: 20px 50px;
+    margin: 40px 50px;
 }

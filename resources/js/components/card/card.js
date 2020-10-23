@@ -9,9 +9,9 @@ export const Card = props =>{
         <div className = 'card-container'>
 
             <div className = 'card-div' >
-
                 <div>
-
+                    <div></div>
+                    <p>Friday October 10 02:00 pm</p>
                 </div>
             </div>
             {/*<img alt='monster' src={`https://robohash.org/${props.monster.id}?set=set2&size=180x180`}/>*/}
