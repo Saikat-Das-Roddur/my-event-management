@@ -50,15 +50,16 @@ export default class HomePage extends Component{
                     <CardList />
                 </section>
                 <section className="section-work">
-                    <div className='triangle-left'>
 
+                    <div className='triangle-left'>
+                        <p>How It Works</p>
                     </div>
                     <div className='triangle-right'>
-
-                    </div>
-                    <div>
                         <img src={logo} alt=""/>
                     </div>
+                    {/*<div>*/}
+                        {/*<img src={logo} alt=""/>*/}
+                    {/*</div>*/}
                 </section>
                 <footer >
                     <Footer />

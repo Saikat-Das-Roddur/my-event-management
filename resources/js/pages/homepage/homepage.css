@@ -119,33 +119,54 @@ nav li{
 }
 
 .section-work img{
-    float: right;
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 240px;
-    height: 212px;
+    margin: 50px;
+    width: 300px;
+    height: 300px;
 }
 .triangle-left{
     position: absolute;
     float: left;
     width: 0;
     height: 0;
-    border-top: 0px solid transparent;
-    border-left: 900px solid #D65339;
-    border-right: -250px solid #ffffff;
-    border-bottom: 200px solid transparent;
-
+    border-top: 250px solid #D65339;
+    border-left: 50px solid transparent;
+    border-right: 860px solid transparent;
 }
+.section-work p{
+    float: left;
+    width:300px;
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: -200px;
+}
+/*border-top: 0px solid transparent;*/
+/*border-left: 900px solid #D65339;*/
+/*border-right: -250px solid #ffffff;*/
+/*border-bottom: 200px solid transparent;*/
 
 .triangle-right{
     position: relative;
-    float: left;
-    width: 0;
+    width: 33.3%;
     height: 0;
-    border-top: 400px solid transparent;
-    border-right: 900px solid #D65339;
-    border-bottom: 0px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 400px solid #D65339;
+    border-left: 900px solid transparent;
+    border-right: 0px solid transparent;
+
+
+
+
 }
+/*border-top: 400px solid transparent;*/
+/*border-right: 900px solid #D65339;*/
+/*border-bottom: 0px solid transparent;*/
+
+/*border-bottom: 100px solid red;*/
+/*border-left: 50px solid transparent;*/
+/*border-right: 50px solid transparent;*/
+/*height: 0;*/
+/*width: 100px;*/
+
 footer{
     margin-top: 10px;
     background: #000000;
