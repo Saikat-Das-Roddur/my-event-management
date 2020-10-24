@@ -12,7 +12,7 @@ import {
     useRouteMatch,
     useParams
 } from "react-router-dom";
-export const Footer =()=>(
+const Footer =()=>(
     <div className="footer">
         <Router>
             <div className="footer-cols">
@@ -70,18 +70,20 @@ export const Footer =()=>(
                 </ul>
 
                 <Switch>
-                    <Route exact={true} path="/browse_events">
+                    <Route exact={true} path="/browse_events"/>
 
-                    </Route>
-                    <Route exact={true} path="/create_events">
 
-                    </Route>
-                    <Route exact={true} path="/sign-in.js">
+                    <Route exact={true} path="/create_events"/>
 
-                    </Route>
+
+                    <Route exact={true} path="/sign-in.js"/>
+
+
                 </Switch>
             </div>
 
         </Router>
     </div>
-)
+);
+
+export default Footer;

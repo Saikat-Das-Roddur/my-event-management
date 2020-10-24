@@ -2,16 +2,21 @@
  * Created by Saikat on 22-Oct-20.
  */
 import React,{Component} from 'react';
-import logo from '../../img/happe_logo.png';
-// import back from '../../img/rsz_happe_logo.png';
+import logo from '../../../img/happe_logo.png';
 
+import SignIn from "../sign-in-page/sign-in-page";
 
-import Header from '../../components/header/header';
-import {Link} from 'react-router-dom';
-import {CardList} from '../../components/cardList/card-list'
-import {Footer} from '../../components/footer/footer'
-import FindEvent from "../../components/find_event/find-event";
-import '../homepage/homepage.css'
+import {
+    BrowserRouter,
+    Switch,
+    Route
+} from "react-router-dom";
+import Header from '../../header/header';
+
+import {CardList} from '../../cardList/card-list'
+import Footer from '../../footer/footer'
+import FindEvent from "../../find_event/find-event";
+import './homepage.css'
 
 
 export default class HomePage extends Component{
@@ -27,9 +32,21 @@ export default class HomePage extends Component{
     render() {
         return (
             <div>
-                <header>
-                    <Header />
-                </header>
+                <BrowserRouter>
+                    <header>
+                        <Header />
+                        <Switch>
+
+                            <Route path="/browse_events"/>
+
+                            <Route path="/create_events"/>
+
+                            <Route path="/sign_sign_up" component={SignIn}/>
+
+                        </Switch>
+                    </header>
+                </BrowserRouter>
+
                 <section>
                     <FindEvent/>
                 </section>

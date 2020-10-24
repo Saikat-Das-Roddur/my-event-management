@@ -1,15 +1,14 @@
-
-import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import HomePage from './pages/homepage/homepage';
-import Welcome from './pages/welcome/welcome-page';
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
  * building robust, powerful web applications using React + Laravel.
  */
-
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomePage from './components/pages/homepage/homepage';
+import SignIn from './components/pages/sign-in-page/sign-in-page';
+import Welcome from './components/pages/welcome/welcome-page';
 require('./bootstrap');
 
 /**
@@ -18,16 +17,10 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./pages/welcome/welcome-page');
-require('./pages/homepage/homepage');
-// if (document.getElementById('example')) {
-//     ReactDOM.render(<Welcome/>, document.getElementById('example'));
-// }else
-
 if (document.getElementById('homepage')){
     render(
         <Router >
-            <Route  path="/" component={HomePage} />
+            <Route  path="/" component={SignIn} />
         </Router>,
         document.getElementById('homepage')
     );
