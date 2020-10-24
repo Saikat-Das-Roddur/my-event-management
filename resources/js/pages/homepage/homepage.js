@@ -3,7 +3,8 @@
  */
 import React,{Component} from 'react';
 import logo from '../../img/happe_logo.png';
-import backImage from '../../img/happ_header.jpg'
+// import back from '../../img/rsz_happe_logo.png';
+
 import Search from '../../components/search/search';
 import Header from '../../components/header/header';
 import {Link} from 'react-router-dom';

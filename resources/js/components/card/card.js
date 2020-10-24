@@ -10,8 +10,30 @@ export const Card = props =>{
 
             <div className = 'card-div' >
                 <div>
-                    <div></div>
-                    <p>Friday October 10 02:00 pm</p>
+                    <div className="card-content">
+                        <div className="card-date">
+                            <p id="month_name">OCT</p>
+                            <p id="day">10</p>
+                        </div>
+
+                        <div className="card-date">
+                            <div id="bar">
+                            </div>
+                            <div id="content">
+                                <p id="title">Title</p>
+                                <p id="location">Location</p>
+                            </div>
+
+                        </div>
+                        <div className="card-date">
+                            <div className="event-amount">
+                                <p id="sign">$</p>
+                                <p id="amount">5</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p id="time">Friday October 10 02:00 pm</p>
                 </div>
             </div>
             {/*<img alt='monster' src={`https://robohash.org/${props.monster.id}?set=set2&size=180x180`}/>*/}

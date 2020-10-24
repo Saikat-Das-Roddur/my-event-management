@@ -6,13 +6,19 @@
  */
 import React from 'react';
 import "./../../../../node_modules/react-day-picker/lib/style.css";
+import dateFnsFormat from 'date-fns/format';
+import dateFnsParse from 'date-fns/parse'
 import DayPickerInput from "./../../../../node_modules/react-day-picker/DayPickerInput";
-// import 'react-dates/lib/css/_datepicker.css';
-// import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
+
+function formatDate(date, format, locale) {
+    return dateFnsFormat(date, format, { locale });
+}
+
+
 const EventByDate =({placeholder,handlechange})=>(
     <div>
-        <DayPickerInput/>
-        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <i class="fa fa-calendar" aria-hidden="true" onClick={true}></i>
+        {<DayPickerInput  formatDate={formatDate}  placeholder={placeholder}  format={"dd/MM/yyyy"} />}
     </div>
 
     )
