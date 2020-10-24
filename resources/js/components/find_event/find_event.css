@@ -8,34 +8,43 @@ img {
     height: 430px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.find-event {
+
+
+.find-event{
     position: absolute;
-    color: #FFFFFF;
     width: 75%;
     height: 200px;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    top: 40%;
+    top: 35%;
     left: 50%;
-
     transform: translate(-50%, -50%);
 }
+
+
+
 .find-event p{
     font-size: 16px;
+    color:#fff;
     position: relative;
     top: 20%;
     left: 15%;
 }
+
+
 .find-options{
     position: relative;
     top: 30%;
     left: 15%;
 }
+
 .find-options input::-moz-placeholder{
     text-align: center;
     size: 36px;
     color: #ffffff;
 }
+
+
 .find-options input{
     position: relative;
     top: 15px;
@@ -50,9 +59,8 @@ img {
     border: none;
 
 }
-.find-options div{
+.find-options>div{
 
-    color: #FFFFFF;
     float: left;
     width: 220px;
     height: 61px;
@@ -60,6 +68,7 @@ img {
 }
 .find-options i{
     float: right;
+    color:#fff;
     margin-top: 22px;
     margin-right: 10px;
 }

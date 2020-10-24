@@ -8,7 +8,7 @@ const EventByCity =({placeholder,handlechange})=> (
                type='search'
                placeholder = {placeholder}
                onChange = {handlechange}/>
-        <i class="fas fa-map-marker"></i>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
 
     </div>
 

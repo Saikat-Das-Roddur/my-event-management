@@ -22,6 +22,7 @@ export default class FindEvent extends Component{
     render(){
         return(
             <div >
+
                 <img src={backImage}/>
                 <div className="find-event">
                     <p>Find the event you are looking for</p>

@@ -5,15 +5,16 @@
  * Created by Saikat on 22-Oct-20.
  */
 import React from 'react';
-const EventByDate =({placeholder,handlechange})=> (
+import "./../../../../node_modules/react-day-picker/lib/style.css";
+import DayPickerInput from "./../../../../node_modules/react-day-picker/DayPickerInput";
+// import 'react-dates/lib/css/_datepicker.css';
+// import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
+const EventByDate =({placeholder,handlechange})=>(
     <div>
-        <input
-               type='search'
-               placeholder = {placeholder}
-               onChange = {handlechange}/>
-        <i class="fas fa-calendar"></i>
+        <DayPickerInput/>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
     </div>
 
-)
+    )
 
 export default EventByDate;
