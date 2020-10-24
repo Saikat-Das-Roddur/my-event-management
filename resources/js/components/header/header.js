@@ -3,6 +3,8 @@
  */
 import React from 'react';
 import './header.css'
+import Search from '../../components/search/search';
+import logo from '../../img/happe_logo.png';
 import ReactDOM from 'react-dom';
 import {
     BrowserRouter as Router,
@@ -16,6 +18,11 @@ import {
 const Header =()=> (
 
 <Router>
+    <div>
+        <Link to="/"><img src={logo}/></Link>
+        <Search placeholder={'Search Events'}
+                handlechange={(e) => this.setState({searchField: e.target.value})}/>
+    </div>
     <div>
         <nav>
             <ul>
@@ -45,7 +52,7 @@ const Header =()=> (
 
 </Router>
 
-)
+);
 
 export default Header;
 

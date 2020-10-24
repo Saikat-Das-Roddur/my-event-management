@@ -5,7 +5,7 @@ import React,{Component} from 'react';
 import logo from '../../img/happe_logo.png';
 // import back from '../../img/rsz_happe_logo.png';
 
-import Search from '../../components/search/search';
+
 import Header from '../../components/header/header';
 import {Link} from 'react-router-dom';
 import {CardList} from '../../components/cardList/card-list'
@@ -28,11 +28,6 @@ export default class HomePage extends Component{
         return (
             <div>
                 <header>
-                    <div>
-                        <Link to="/"><img src={logo}/></Link>
-                        <Search placeholder={'Search Events'}
-                                handlechange={(e) => this.setState({searchField: e.target.value})}/>
-                    </div>
                     <Header />
                 </header>
                 <section>
